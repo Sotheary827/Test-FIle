@@ -1,0 +1,153 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    background-color: rgb(253, 193, 240);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    padding: 30px;
+}
+.header a{
+    text-decoration: none;
+    color: rgb(230, 24, 230);
+    font-size: 25px;
+    margin: 0 25px;
+    transition: 0.3s ease;
+    font-weight: 600;
+}
+.header a:hover{
+    color: rgb(24, 230, 117);
+    border-bottom: rgb(11, 246, 11) 2px solid;
+    transform: scale(1.3);
+    transition: transform 2s;
+}
+
+.one{
+    background-color: rgb(84, 82, 77);
+    color: white;
+    padding: 50px;
+    width: 100%;
+    height: 180px;
+    justify-content: center;
+    text-align: center;
+}
+.one p{
+    color: tomato;
+}
+.top{
+    background-color: rgb(241, 74, 27);
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    padding: 20px;
+}
+
+.two{
+    gap: 10px;
+    display: flex;
+    height: 300px;
+    width: 70%;
+    margin: 0 auto;
+
+}
+.top h2{
+    color: white;
+    text-decoration: underline;
+}
+.three{
+    gap: 10px;
+    display: flex;
+    height: 300px;
+    width: 70%;
+    margin: 0 auto;
+}
+.card{
+    width: 33%;
+    border: 2px solid black;
+    background-color: grey;
+    height: 270px;
+}
+.card img{
+    width: 100%;
+    height: 200px;
+    transition: 0.3 ease;
+}
+.card img:hover{
+    opacity: 0.5;
+    border-radius: 20px;
+    
+}
+.text h3{
+    text-align: center;
+}
+button {
+    border: 2px solid black;
+    width: 120px;
+    height: 47px;
+    background-color: rgb(2, 172, 229);
+    color: #121111;
+    font-size: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+button:hover{
+    background-color: rgb(2, 229, 2);
+    color: black;
+}
+.last{
+    background-color: grey;
+    height: 300px;
+    width: 100%;
+    text-align: center;
+}
+.last .text{
+    padding: 20px;
+}
+.last a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 0 25px;
+}
+section p{
+    background-color: gray;
+    padding: 30px;
+    color: white;
+    text-align: center;
+
+}
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header a {
+        margin: 5px 0;
+    }
+
+    .card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+
+    .last a {
+        display: block;
+        margin: 10px auto;
+    }
+}
+
+
